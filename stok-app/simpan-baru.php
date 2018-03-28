@@ -20,8 +20,8 @@ $query = "insert into stock_barang(kode, nama_barang, stok) " .
         $_POST["namaBarang"] . "'," . $_POST["stok"] . ")";
 //echo "<br>".$query;
 
-if($koneksi->query($query) == true){
-    echo "<br> Data" . $_POST["namaBarang"] . "berhasil disimpin" . ' <a href="main.php">Lihat Data</a>';
+if($koneksi->query($query) === true){
+    echo "<br> Data" . $_POST["namaBarang"] . "berhasil disimpan" . ' <a href="main.php">Lihat Data</a>';
 }else {
     echo "<br> Data Gagal disimpan";
 }

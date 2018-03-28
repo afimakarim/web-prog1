@@ -12,7 +12,7 @@ if($koneksi->connect_error) {
 } 
 
 $query = "select * from stock_barang where kode='" .
-$_GET["kode"] . "'";
+            $_GET["kode"] . "'";
 $data = $koneksi->query($query);
 $namaBarang = "";
 $stok = "";

@@ -18,8 +18,8 @@ $query = "update stock_barang set nama_barang = '". $_POST["namaBarang"]. "'," .
         "  stok = " . $_POST["stok"] . " " .
         "where kode = " . $_POST["kode"];
         
-if($koneksi->query($query) == true){
-    echo "<br> Data" . $_POST["namaBarang"] . "berhasil disimpin" . ' <a href="main.php">Lihat Data</a>';
+if($koneksi->query($query) === true){
+    echo "<br> Data" . $_POST["namaBarang"] . "berhasil disimpan" . ' <a href="main.php">Lihat Data</a>';
 }else {
     echo "<br> Data Gagal disimpan";
     }
