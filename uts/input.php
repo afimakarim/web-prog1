@@ -1,4 +1,4 @@
-<h2>Formulir Entry Data</h2>
+<h2>Masukan Data</h2>
 <hr>
 <form action="simpan.php" method="post">
     <table>
@@ -16,5 +16,4 @@
         </tr>
     </table>
     <input type="submit" value="Simpan">
-    <button type="button" onclick="window.location.href='index.php'">Batal</button>
 </form>
